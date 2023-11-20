@@ -1,0 +1,38 @@
+name: conar
+channels:
+    - gurobi
+dependencies:
+    - python>=3
+    - pip
+    - docopt
+    - schema
+    - matplotlib
+    - seaborn
+    - importlib_resources
+    - gurobi
+    - pip:
+        - --extra-index-url https://download.pytorch.org/whl/cu118
+        - torch==2.0.0
+        - torchvision==0.15.1
+        - torchaudio==2.0.1
+        - pytorch-lightning==1.8.1
+        - torch_geometric
+        - pyg_lib
+        - torch_scatter
+        - -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+        - wandb
+        - torcheval
+        - torch_sparse
+        - -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+        - torch_cluster
+        - -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+        - torch_spline_conv
+        - -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+        - "jax[cuda11_pip]"
+        - -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+        - /home/dobrik/clrs/ # FIXME This should point a copy of dm-clrs repo https://github.com/google-deepmind/clrs
+        # - dm-clrs # NOTE We recommend to install directly from the original CLRS repo. See above line
+        - zython
+        - minizinc
+        - elkai
+        - pulp

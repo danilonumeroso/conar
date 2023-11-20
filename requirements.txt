@@ -1,0 +1,23 @@
+schema
+docopt
+numpy
+-f https://download.pytorch.org/whl/cu118
+torch
+torch_geometric
+-f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+pyg_lib
+-f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+torch_scatter
+-f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+torch_sparse
+pytorch-lightning==1.8.1
+dm_clrs
+importlib_resources
+seaborn
+wandb
+torcheval
+gurobipy
+zython
+minizinc
+pulp
+elkai
